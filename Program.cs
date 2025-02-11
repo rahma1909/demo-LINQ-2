@@ -1,4 +1,5 @@
-﻿using static demo.ListGenerator;
+﻿using System.Text.RegularExpressions;
+using static demo.ListGenerator;
 namespace demo
 {
     internal class Program
@@ -437,6 +438,32 @@ namespace demo
             //}
 
 
+
+            #endregion
+
+            #region Let && Into
+
+            //List<string> names = ["ahmed", "aya"];
+
+
+
+            ////var res = from n in names
+            ////          select Regex.Replace(n, "[AOIUEaoiue]", string.Empty)
+            ////into newnames
+            ////          where newnames.Length <3
+            ////          select newnames;
+
+
+
+            //var res = from n in names
+            //          let newnames=Regex.Replace(n, "[AOIUEaoiue]", string.Empty)
+        
+            //          where newnames.Length < 3
+            //          select newnames;
+            //foreach (var item in res)
+            //{
+            //    Console.WriteLine(item);
+            //}
 
             #endregion
 

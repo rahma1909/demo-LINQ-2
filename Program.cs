@@ -337,8 +337,8 @@ namespace demo
             #region quentifier opertores -  return bool
 
 
-            var seq01 = Enumerable.Range(1, 100);
-            var seq02 = Enumerable.Range(50, 100);
+            //var seq01 = Enumerable.Range(1, 100);
+            //var seq02 = Enumerable.Range(50, 100);
 
             //var res = seq01.Any( n=>n%2==0);
             //List<int> seq01 = [];//true empty list
@@ -369,6 +369,46 @@ namespace demo
             //{
             //    Console.WriteLine(item);
             //}
+
+            #endregion
+
+            #region grouping operators
+            //fluent
+            //var res = ProductList.GroupBy(p => p.Category);
+
+            //query
+            //var res = from p in ProductList
+            //          group p by p.Category;
+
+
+            //******************************
+
+            //var res = from p in ProductList
+            //          where p.UnitsInStock > 0
+            //          group p by p.Category
+            //         into cat
+            //          where cat.Count() > 10
+            //          select cat
+            //          into cat
+            //          orderby cat.Count() descending
+            //          select new { catname = cat.Key, catcount = cat.Count() };
+                      
+
+
+            //foreach (var item in res)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+            //foreach (var cat in res)
+            //{
+            //    Console.WriteLine(cat.Key);
+            //    foreach (var item in cat)
+            //    {
+            //        Console.WriteLine(item);
+            //    }
+            //}
+
 
             #endregion
 

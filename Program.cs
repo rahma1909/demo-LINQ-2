@@ -174,7 +174,66 @@ namespace demo
 
             #endregion
 
+            #region Elements operators- immidate excuation
 
+            //ProductList = new List<Product>();//empty
+            //var res = ProductList.First();//maythrough an exception
+
+
+            //var res = ProductList.First(p=>p.UnitsInStock==0);
+            //var res = ProductList.Last(p=>p.UnitsInStock==0);
+
+            //var res = ProductList.FirstOrDefault(new Product()
+            //{
+            //    ProductName="there is no product"
+            //});
+
+
+
+            //var res = ProductList.FirstOrDefault(p=>p.UnitsInStock==0);
+            //var res = ProductList.FirstOrDefault(p=>p.UnitsInStock==0,new Product()
+            //{
+            //    ProductName = "there is no product"
+            //});
+
+
+            //var res = ProductList.LastOrDefault(p=>p.UnitsInStock==0);
+            //var res = ProductList.LastOrDefault(p => p.UnitsInStock == 0, new Product()
+            //{
+            //    ProductName = "there is no product"
+            //});
+
+
+
+            //var res = ProductList.ElementAt(0);//may through an exception
+            //var res = ProductList.ElementAtOrDefault(0);
+
+
+            //var res = ProductList.Single();//Sequence contains more than one element ==>seq is more than one element,or ele
+
+
+            //var res = ProductList.SingleOrDefault();
+            //var res = ProductList.SingleOrDefault(p=>p.UnitsInStock==0);
+            //var res = ProductList.SingleOrDefault(p=>p.UnitsInStock==0,new Product()
+            //{
+            //    ProductName="chai"
+            //});
+
+
+            //Console.WriteLine(res?.ProductName ?? "NA");
+
+
+            //var res = ProductList.DefaultIfEmpty(new Product()
+            //{
+            //    ProductName="default"
+            //});
+        
+            //foreach (var item in res)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+            #endregion
         }
     }
 }

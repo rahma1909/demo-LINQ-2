@@ -290,6 +290,30 @@ namespace demo
 
 
             #endregion
+
+            #region Generation operators
+
+
+            //var res = Enumerable.Range(1, 100);
+            //var res = Enumerable.Empty<Product>().ToList();
+
+            //res.Add(new Product()
+            //{
+            //    ProductID = 21,
+            //    ProductName = "chai"
+            //});
+
+            //var res = Enumerable.Repeat(ProductList[0],3);
+            //foreach (var item in res)
+            //{
+            //    Console.WriteLine(item);
+                
+            //}
+
+
+            #endregion
+
+
         }
     }
 }

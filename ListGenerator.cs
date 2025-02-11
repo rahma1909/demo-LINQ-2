@@ -7,6 +7,16 @@ using System.Xml.Linq;
 
 namespace demo
 {
+    //class product02
+    //{
+    //    public long ProductID { get; set; }
+    //    public string ProductName { get; set; }
+
+    //    public override string ToString()
+    //    {
+    //        return $"{ProductID} ::: {ProductName}";
+    //    }
+    //}
     class Product
     {
         public long ProductID { get; set; }

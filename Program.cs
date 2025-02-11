@@ -127,23 +127,48 @@ namespace demo
 
             //*******************************************
 
-            //var res = CustomerList.SelectMany(c => c.Orders,  (customer, order) =>new
+            //var res = CustomerList.SelectMany(c => c.Orders, (customer, order) => new
             //{
             //    customer,
             //    order,
             //});
 
-           //var res = from c in CustomerList
-           //       from o in c.Orders
-           //       select new
-           //       {
-           //           c,o
-           //       };
+            //var res = from c in CustomerList
+            //       from o in c.Orders
+            //       select new
+            //       {
+            //           c,o
+            //       };
             //foreach (var item in res)
             //{
             //    Console.WriteLine(item);
             //}
             #endregion
+
+
+
+            #endregion
+
+            #region ordering operators - order, orderdesending, orderby, orderbydescending,thenby,thenbydescending,reverse
+
+
+            //var res = ProductList.Order();
+            //var res = ProductList.OrderDescending();
+            //var res = ProductList.OrderByDescending(p=>p.UnitsInStock);
+            //var res = ProductList.OrderBy(p=>p.UnitsInStock);//asending
+            //var res = ProductList.OrderBy(p=>p.UnitsInStock).ThenBy(p=>p.UnitPrice);//asending
+
+            //var res = from p in ProductList
+            //          orderby p.UnitsInStock, p.UnitPrice
+            //          select p;
+
+            //var res = ProductList.Where(p => p.UnitsInStock == 0).Reverse();
+            //foreach (var item in res)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+
 
 
 

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Authentication.ExtendedProtection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
@@ -17,7 +18,7 @@ namespace demo
     //        return $"{ProductID} ::: {ProductName}";
     //    }
     //}
-    class Product
+    class Product: IComparable<Product>
     {
         public long ProductID { get; set; }
         public string ProductName { get; set; }
@@ -25,6 +26,10 @@ namespace demo
         public decimal UnitPrice { get; set; }
         public int UnitsInStock { get; set; }
 
+        public int CompareTo(Product? other)
+        {
+            return this.UnitPrice.CompareTo(other?.UnitPrice);
+        }
 
         public override string ToString()
             => $"ProductID: {ProductID}, ProductName: {ProductName}, Category: {Category}, UnitPrice: {UnitPrice:c}, UnitsInStock: {UnitsInStock}";

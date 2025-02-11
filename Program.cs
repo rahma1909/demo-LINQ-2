@@ -307,9 +307,30 @@ namespace demo
             //foreach (var item in res)
             //{
             //    Console.WriteLine(item);
-                
+
             //}
 
+
+            #endregion
+
+            #region set operators
+
+
+           // var seq01 = Enumerable.Range(1, 100);
+           // var seq02 = Enumerable.Range(50, 100);
+
+           // //var res = seq01.Union(seq02);//without any duplications
+           // //var res = seq01.Intersect(seq02);
+           // var res = seq01.Except(seq02);
+           //// var res = seq01.Concat(seq02);//with duplications
+
+           ////res= res.Distinct();//remove
+
+
+           // foreach (var item in res)
+           // {
+           //     Console.Write(item);
+           // }
 
             #endregion
 

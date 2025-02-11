@@ -316,24 +316,44 @@ namespace demo
             #region set operators
 
 
-           // var seq01 = Enumerable.Range(1, 100);
-           // var seq02 = Enumerable.Range(50, 100);
+            // var seq01 = Enumerable.Range(1, 100);
+            // var seq02 = Enumerable.Range(50, 100);
 
-           // //var res = seq01.Union(seq02);//without any duplications
-           // //var res = seq01.Intersect(seq02);
-           // var res = seq01.Except(seq02);
-           //// var res = seq01.Concat(seq02);//with duplications
+            // //var res = seq01.Union(seq02);//without any duplications
+            // //var res = seq01.Intersect(seq02);
+            // var res = seq01.Except(seq02);
+            //// var res = seq01.Concat(seq02);//with duplications
 
-           ////res= res.Distinct();//remove
+            ////res= res.Distinct();//remove
 
 
-           // foreach (var item in res)
-           // {
-           //     Console.Write(item);
-           // }
+            // foreach (var item in res)
+            // {
+            //     Console.Write(item);
+            // }
 
             #endregion
 
+            #region quentifier opertores -  return bool
+
+
+            var seq01 = Enumerable.Range(1, 100);
+            var seq02 = Enumerable.Range(50, 100);
+
+            //var res = seq01.Any( n=>n%2==0);
+            //List<int> seq01 = [];//true empty list
+            //var res = seq01.All( n=>n%2==0);
+
+
+            //var res = seq01.SequenceEqual(seq02);//false
+            //var res = seq01.Contains(1);//True
+
+
+            //Console.WriteLine(res);
+
+
+
+            #endregion
 
         }
     }

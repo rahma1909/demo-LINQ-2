@@ -392,7 +392,7 @@ namespace demo
             //          into cat
             //          orderby cat.Count() descending
             //          select new { catname = cat.Key, catcount = cat.Count() };
-                      
+
 
 
             //foreach (var item in res)
@@ -408,6 +408,34 @@ namespace demo
             //        Console.WriteLine(item);
             //    }
             //}
+
+
+            #endregion
+
+            #region partitioning operators
+
+
+            //var res = ProductList.Where(p=>p.UnitsInStock==0).Take(2);
+            //var res = ProductList.Where(p=>p.UnitsInStock==0).TakeLast(2);
+
+
+            //var res = ProductList.Where(p=>p.UnitsInStock==0).Skip(2);
+            //var res = ProductList.Where(p=>p.UnitsInStock==0).SkipLast(2);
+
+            //int[] nums = [9, 2, 3, 4, 56, 6];
+
+            ////var res = nums.TakeWhile(n => n % 3 == 0);//9
+            ////var res = nums.SkipWhile(n => n % 3 == 0);//9
+
+
+
+
+            //var res = nums.TakeWhile((n,I)=> n>I);
+            //foreach (var item in res)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
 
 
             #endregion

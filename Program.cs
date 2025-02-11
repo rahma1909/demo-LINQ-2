@@ -227,12 +227,52 @@ namespace demo
             //{
             //    ProductName="default"
             //});
-        
+
             //foreach (var item in res)
             //{
             //    Console.WriteLine(item);
             //}
 
+            #endregion
+
+            #region aggregate operators - immidate excuation
+
+            //var res = ProductList.Count();
+            //var res = ProductList.Count(p => p.UnitsInStock == 0);//5
+
+            //var res = ProductList.Count;
+
+
+            //sum
+            //var res = ProductList.Sum(p => p.UnitPrice);
+            //Console.WriteLine(res);
+
+            //avarage
+            //var res = ProductList.Average(  p => p.UnitPrice);
+            //Console.WriteLine(res);
+
+            //max
+            //var res = ProductList.Max( new unitinstockcomparer());
+            //Console.WriteLine(res);     
+            //var maxvalue = ProductList.Max(p=>p.UnitsInStock) ;//125
+            //var res = ProductList.FirstOrDefault(p => p.UnitsInStock == maxvalue);
+
+
+            //maxby
+            //var res = ProductList.MaxBy(p => p.UnitPrice);
+
+
+
+            //minby
+            //var res = ProductList.MinBy(p => p.UnitPrice,new unitpricecomarer());
+            //var res = ProductList.MaxBy(p => p.UnitPrice,new unitpricecomarer());
+
+
+
+            //aggregate
+            //List<string> names = ["ahmed", "mohamed"];
+            //var res = names.Aggregate((a, b) => $"{a} ::: {b}");
+            //Console.WriteLine(res);
             #endregion
         }
     }

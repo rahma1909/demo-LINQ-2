@@ -18,6 +18,21 @@ namespace demo
     //        return $"{ProductID} ::: {ProductName}";
     //    }
     //}
+    //class unitinstockcomparer : IComparer<Product>
+    //{
+    //    public int Compare(Product? x, Product? y)
+    //    {
+    //        return x.UnitsInStock.CompareTo(y.UnitsInStock);
+    //    }
+    //}
+    class unitpricecomarer : IComparer<decimal>
+    {
+     
+        int IComparer<decimal>.Compare(decimal x, decimal y)
+        {
+            return x.CompareTo(y);
+        }
+    }
     class Product: IComparable<Product>
     {
         public long ProductID { get; set; }

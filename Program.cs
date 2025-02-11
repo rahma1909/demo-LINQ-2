@@ -274,6 +274,22 @@ namespace demo
             //var res = names.Aggregate((a, b) => $"{a} ::: {b}");
             //Console.WriteLine(res);
             #endregion
+
+            #region casting operators- immediate excuation
+
+
+            //List<Product> list = ProductList.Where(p => p.UnitsInStock == 0).ToList();
+            //Array list = ProductList.Where(p => p.UnitsInStock == 0).ToArray();
+            //Dictionary<long,Product> dic = ProductList.Where(p => p.UnitsInStock == 0).ToDictionary(p=>p.ProductID);
+            //HashSet<Product> dic = ProductList.Where(p => p.UnitsInStock == 0).ToHashSet();
+            //foreach (var item in dic)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+
+
+            #endregion
         }
     }
 }

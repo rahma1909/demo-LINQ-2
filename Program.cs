@@ -355,6 +355,23 @@ namespace demo
 
             #endregion
 
+            #region zipping opertors
+
+            //zip
+
+            //List<string> words = ["one"];
+            //List<int> nums = [1];
+
+            //var res = words.Zip(nums, (x, y) => $"{x}==>{y}");
+
+
+            //foreach (var item in res)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+            #endregion
+
         }
     }
 }
